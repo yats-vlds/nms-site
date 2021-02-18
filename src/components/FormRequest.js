@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./FormRequest.css"
 import skrepka from "../assets/skrepka.svg"
 import fromPryam1 from "../assets/formPryam1.svg"
@@ -6,6 +6,7 @@ import fromPryam2 from "../assets/fromPryam2.png"
 import fromPryam3 from "../assets/formPryam3.svg"
 
 const FormRequest = () => {
+    const [ellipse, setEllipse] = useState(false)
     return (
         <>
             <div className="form-header-title">
@@ -29,14 +30,14 @@ const FormRequest = () => {
             </div>
             <div className="btn">
                 <div className="btn-twoSloy">
-                    <div className="btn-threeSloy">
-                        <div className="btn-fourSloy">
+                    <div className={ellipse ? "btn-threeSloyAfter" : "btn-threeSloyBefore"}>
+                        <div className={ellipse ? "btn-fourSloyAfter" : "btn-fourSloyBefore"}>
                             <h1 className="btn-fourSloyTitle">
                                 Start now
                             </h1>
                         </div>
                     </div>
-                    <div className="ellipse-btn">
+                    <div className={ellipse ? "ellipse-btnFormAfter" : "ellipse-btnFormBefore"} onClick={() => setEllipse(!ellipse)}>
                     </div>
                 </div>
             </div>
