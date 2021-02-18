@@ -13,21 +13,21 @@ function App() {
         <Router>
             <div className="app">
                 <Header/>
-                <Switch>
-                    <Route path="/" exact>
-                        <Home/>
-                    </Route>
-                    <Route path="/custom">
-                        <Custom type="custom"/>
-                    </Route>
-                    <Route path="/mobile-and-web">
-                        <Custom type="mobile"/>
-                    </Route>
-                    <Route path="/ui-ux">
-                        <Custom/>
-                    </Route>
-                </Switch>
-                <Footer id="contacts"/>
+                {/*<Switch>*/}
+                {/*    <Route path="/" exact>*/}
+                {/*        <Home/>*/}
+                {/*    </Route>*/}
+                {/*    <Route path="/custom">*/}
+                {/*        <Custom type="custom"/>*/}
+                {/*    </Route>*/}
+                {/*    <Route path="/mobile-and-web">*/}
+                {/*        <Custom type="mobile"/>*/}
+                {/*    </Route>*/}
+                {/*    <Route path="/ui-ux">*/}
+                {/*        <Custom/>*/}
+                {/*    </Route>*/}
+                {/*</Switch>*/}
+                {/*<Footer id="contacts"/>*/}
             </div>
         </Router>
     );
