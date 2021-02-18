@@ -15,7 +15,8 @@
     align-items: center;
     -webkit-animation: aligning 2s infinite;
     animation: aligning 2s infinite;
-    height: 552px;
+    height: 600px;
+    margin-top: -54px;
 }
 .expert__lineFirst {
     display: flex;
@@ -58,7 +59,6 @@
     line-height: 25px;
     color: #000000;
     font-weight: 300;
-    font-family: "Work Sans";
     text-align: right;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .expert__lineLast {
-    padding-bottom: 400px;
+    padding-bottom: 194px;
 }
 
 .expert__lineRightYog {
@@ -94,25 +94,25 @@
 
 @-webkit-keyframes pulsing {
     0% {
-        padding-top: 5px;
+        padding-top: 0rem;
     }
     50% {
-        padding-top: 0;
+        padding-top: 5rem;
     }
     100% {
-        padding-top: 5px;
+        padding-top: 0rem;
     }
 }
 
 @keyframes pulsing {
     0% {
-        padding-top: 5px;
+        padding-top: 0rem;
     }
     50% {
-        padding-top: 0;
+        padding-top: 5rem;
     }
     100% {
-        padding-top: 5px;
+        padding-top: 0rem;
     }
 }
 

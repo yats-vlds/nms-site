@@ -43,6 +43,13 @@
     color: #000000;
 }
 
+.header__link:hover {
+    color: gray;
+}
+
+.header__linkContacts:hover {
+    color: gray;
+}
 @media (max-width: 1440px) {
     .header__linkContacts {
         margin-right: 2rem;
