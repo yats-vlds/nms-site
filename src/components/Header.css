@@ -50,6 +50,12 @@
 .header__linkContacts:hover {
     color: gray;
 }
+
+@media (max-width: 1707px) {
+    .header__linkContacts {
+        margin-right: 3rem;
+    }
+}
 @media (max-width: 1440px) {
     .header__linkContacts {
         margin-right: 2rem;

@@ -12,12 +12,12 @@ const Home = () => {
   return (
     <>
         <Cap/>
-        <StarProject id="expertise"/>
-        <Expert/>
-        <WhyMe id="why"/>
-        <Jobs id="works"/>
-        <Form/>
-        <Ten/>
+        {/*<StarProject id="expertise"/>*/}
+        {/*<Expert/>*/}
+        {/*<WhyMe id="why"/>*/}
+        {/*<Jobs id="works"/>*/}
+        {/*<Form/>*/}
+        {/*<Ten/>*/}
     </>
   )
 }
