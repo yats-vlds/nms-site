@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./StarProject.css"
 import background from "../assets/back.svg"
 import iconDown from "../assets/iconDown.svg"
@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 
 
 const StarProject = ({id}) => {
+    const [ellipse, setEllipse] = useState(false)
     return (
         <div className="star__project">
             <div className="star__projectSloy" id={id}>
@@ -22,14 +23,14 @@ const StarProject = ({id}) => {
                 <img src={vectorSmart} className="vectorSmart"/>
                 <div className="btnStar">
                     <div className="btnStar-twoSloy">
-                        <div className="btnStar-threeSloy">
-                            <div className="btnStar-fourSloy">
+                        <div className={ellipse ? "threeSloyAfter" : "btnStar-threeSloyBefore"}>
+                            <div className={ellipse? "btnStar-fourSloyAfter" : "btnStar-fourSloyBefore" }>
                                 <h1 className="btnStar-fourSloyTitle">
                                     Start now
                                 </h1>
                             </div>
                         </div>
-                        <div className="ellipse-btnStar">
+                        <div className={ellipse ? "ellipse-btnStarAfter" : "ellipse-btnStarBefore"} onClick={() => setEllipse(!ellipse)}>
                         </div>
                     </div>
                 </div>
